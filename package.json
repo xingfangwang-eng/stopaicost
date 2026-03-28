@@ -1,0 +1,25 @@
+{
+  "name": "stop-aicost",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'No build required'",
+    "start": "node server.js",
+    "test-links": "node test-links.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0",
+    "xss": "^1.0.15",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
