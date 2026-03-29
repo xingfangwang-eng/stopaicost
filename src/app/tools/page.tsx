@@ -41,7 +41,7 @@ export default function ToolsPage() {
             {keywords.map((tool) => (
               <Link
                 key={tool.slug}
-                href={`/tools/${tool.slug}`}
+                href={`/solutions/${tool.slug}`}
                 className="group bg-white border border-slate-200 p-8 hover:border-blue-500 transition-colors"
               >
                 <div className="flex items-start justify-between mb-4">
@@ -50,7 +50,7 @@ export default function ToolsPage() {
                   </div>
                   <ArrowRight className="w-5 h-5 text-blue-400 group-hover:text-blue-600 transition-colors" />
                 </div>
-                <h2 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-red-600 transition-colors">
+                <h2 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
                   {tool.title}
                 </h2>
                 <p className="text-sm text-slate-600 leading-relaxed line-clamp-2">

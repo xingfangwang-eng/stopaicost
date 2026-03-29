@@ -10,13 +10,6 @@ export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://stopaiicost.com';
   
-  const toolPages = keywordsData.map((item: Keyword) => ({
-    url: `${baseUrl}/tools/${item.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }));
-
   const solutionPages = keywordsData.map((item: Keyword) => ({
     url: `${baseUrl}/solutions/${item.slug}`,
     lastModified: new Date(),
@@ -43,7 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.9,
     },
-    ...toolPages,
     ...solutionPages,
   ];
 }
