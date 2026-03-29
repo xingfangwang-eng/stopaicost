@@ -108,12 +108,6 @@ export default function HomePage() {
                 Generate Script Now
               </a>
               <Link
-                href="/tools"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-slate-200 text-slate-900 font-bold text-lg hover:border-slate-300 transition-all"
-              >
-                Browse Tools
-              </Link>
-              <Link
                 href="/solutions"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-slate-200 text-slate-900 font-bold text-lg hover:border-slate-300 transition-all"
               >
@@ -258,13 +252,13 @@ export default function HomePage() {
 
             <div className="lg:sticky-sidebar space-y-8">
               <div className="bg-slate-50 border border-slate-200 p-8">
-                <h3 className="font-bold text-slate-900 mb-6">Popular Tools</h3>
+                <h3 className="font-bold text-slate-900 mb-6">Popular Solutions</h3>
                 <div className="space-y-4">
                   {popularTools.map((tool) => (
                     <Link
                       key={tool.slug}
-                      href={`/tools/${tool.slug}`}
-                      className="flex items-center gap-2 text-sm text-slate-600 hover:text-red-600 transition-colors"
+                      href={`/solutions/${tool.slug}`}
+                      className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600 transition-colors"
                     >
                       <ArrowRight className="w-4 h-4" />
                       {tool.title}
