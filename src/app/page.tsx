@@ -117,7 +117,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24">
+      <section className="my-16 lg:my-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
@@ -137,10 +137,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="generator" className="py-16 lg:py-24 bg-white border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section id="generator" className="my-16 lg:my-24 bg-white border-y border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-8">
-            <div>
+            <div className="space-y-8">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-red-600 flex items-center justify-center">
                   <Zap className="w-6 h-6 text-white" />
@@ -272,7 +272,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24">
+      <section className="my-16 lg:my-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black tracking-tighter text-slate-900 mb-4">
