@@ -9,7 +9,8 @@ import {
   Clock,
   Shield,
   Code,
-  ArrowRight
+  ArrowRight,
+  Heart
 } from 'lucide-react';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -118,6 +119,15 @@ export default function HomePage() {
               >
                 Browse All Alternatives
               </Link>
+              <a
+                href="https://www.paypal.me/xingfangwang?country.x=US&locale.x=en_US"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-slate-200 text-slate-900 font-bold text-lg hover:border-slate-300 transition-all"
+              >
+                <Heart className="w-5 h-5 mr-2" />
+                Support Us
+              </a>
             </div>
           </div>
         </div>
