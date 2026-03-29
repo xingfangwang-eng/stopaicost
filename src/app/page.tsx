@@ -88,7 +88,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-50">
       <section className="bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black tracking-tighter text-slate-900 mb-6">
               Stop Paying for{' '}
@@ -117,13 +117,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="my-16 lg:my-24">
+      <section className="py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
               <div key={index} className="bg-white border border-slate-200 p-8">
-                <div className="w-12 h-12 bg-slate-100 flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-slate-400" />
+                <div className="w-12 h-12 bg-blue-50 flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-blue-500" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">
                   {feature.title}
@@ -137,8 +137,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="generator" className="my-16 lg:my-24 bg-white border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+      <section id="generator" className="py-12 lg:py-16 bg-white border-y border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-8">
             <div className="space-y-8">
               <div className="flex items-center gap-3 mb-6">
@@ -272,7 +272,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="my-16 lg:my-24">
+      <section className="py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black tracking-tighter text-slate-900 mb-4">

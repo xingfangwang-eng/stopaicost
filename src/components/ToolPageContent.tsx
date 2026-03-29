@@ -125,7 +125,7 @@ export function ToolPageContent({ keyword }: ToolPageContentProps) {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 lg:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-8">
           <div className="space-y-8">
             <section className="bg-white border border-slate-200 p-8 lg:p-10">
@@ -139,8 +139,8 @@ export function ToolPageContent({ keyword }: ToolPageContentProps) {
 
             <section className="bg-white border border-slate-200 p-8 lg:p-10">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-slate-100 flex items-center justify-center">
-                  <AlertTriangle className="w-6 h-6 text-slate-400" />
+                <div className="w-12 h-12 bg-blue-50 flex items-center justify-center">
+                  <AlertTriangle className="w-6 h-6 text-blue-500" />
                 </div>
                 <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-red-600 pl-4">
                   The Problem
@@ -162,8 +162,8 @@ export function ToolPageContent({ keyword }: ToolPageContentProps) {
 
             <section className="bg-white border border-slate-200 p-8 lg:p-10">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-slate-100 flex items-center justify-center">
-                  <Lightbulb className="w-6 h-6 text-slate-400" />
+                <div className="w-12 h-12 bg-blue-50 flex items-center justify-center">
+                  <Lightbulb className="w-6 h-6 text-blue-500" />
                 </div>
                 <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-red-600 pl-4">
                   The Solution
@@ -186,8 +186,8 @@ export function ToolPageContent({ keyword }: ToolPageContentProps) {
 
             <section className="bg-white border border-slate-200 p-8 lg:p-10">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-slate-100 flex items-center justify-center">
-                  <TrendingDown className="w-6 h-6 text-slate-400" />
+                <div className="w-12 h-12 bg-blue-50 flex items-center justify-center">
+                  <TrendingDown className="w-6 h-6 text-blue-500" />
                 </div>
                 <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-red-600 pl-4">
                   Cost Comparison
@@ -219,8 +219,8 @@ export function ToolPageContent({ keyword }: ToolPageContentProps) {
 
             <section className="bg-white border border-slate-200 p-8 lg:p-10">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-slate-100 flex items-center justify-center">
-                  <Clock className="w-6 h-6 text-slate-400" />
+                <div className="w-12 h-12 bg-blue-50 flex items-center justify-center">
+                  <Clock className="w-6 h-6 text-blue-500" />
                 </div>
                 <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-red-600 pl-4">
                   Step-by-Step Guide
@@ -240,8 +240,8 @@ export function ToolPageContent({ keyword }: ToolPageContentProps) {
 
             <section className="bg-white border border-slate-200 p-8 lg:p-10">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-slate-100 flex items-center justify-center">
-                  <Code className="w-6 h-6 text-slate-400" />
+                <div className="w-12 h-12 bg-blue-50 flex items-center justify-center">
+                  <Code className="w-6 h-6 text-blue-500" />
                 </div>
                 <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-red-600 pl-4">
                   Ready-to-Use Code
@@ -307,7 +307,7 @@ export function ToolPageContent({ keyword }: ToolPageContentProps) {
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Clock className="w-5 h-5 text-slate-400" />
+                  <Clock className="w-5 h-5 text-blue-500" />
                   <span className="text-sm text-slate-600">
                     Generation time: <strong className="text-slate-900">~3 seconds</strong>
                   </span>
@@ -326,16 +326,16 @@ export function ToolPageContent({ keyword }: ToolPageContentProps) {
             <div className="mt-6 bg-white border border-slate-200 p-6">
               <h4 className="font-bold text-slate-900 mb-4">Related Tools</h4>
               <div className="space-y-3">
-                <a href="/tools/api-pricing-vs-subscription-comparison" className="flex items-center gap-2 text-sm text-slate-600 hover:text-red-600 transition-colors">
-                  <ArrowRight className="w-4 h-4" />
+                <a href="/tools/api-pricing-vs-subscription-comparison" className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600 transition-colors">
+                  <ArrowRight className="w-4 h-4 text-blue-400" />
                   API vs Subscription Calculator
                 </a>
-                <a href="/tools/chatgpt-plus-vs-api-cost-calculator" className="flex items-center gap-2 text-sm text-slate-600 hover:text-red-600 transition-colors">
-                  <ArrowRight className="w-4 h-4" />
+                <a href="/tools/chatgpt-plus-vs-api-cost-calculator" className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600 transition-colors">
+                  <ArrowRight className="w-4 h-4 text-blue-400" />
                   ChatGPT Plus vs API Cost
                 </a>
-                <a href="/tools/save-money-cursor-ai" className="flex items-center gap-2 text-sm text-slate-600 hover:text-red-600 transition-colors">
-                  <ArrowRight className="w-4 h-4" />
+                <a href="/tools/save-money-cursor-ai" className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600 transition-colors">
+                  <ArrowRight className="w-4 h-4 text-blue-400" />
                   Save Money on Cursor AI
                 </a>
               </div>
