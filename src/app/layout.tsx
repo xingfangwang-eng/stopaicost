@@ -40,6 +40,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google HTML Verification Tag */}
+        {/* Add your Google verification tag here, for example: */}
+       <meta name="google-site-verification" content="uTT2vLHXrvh44esSpln_EMc1QEFjkN0vjJZ04UgI0Qc" />
+      </head>
       <body className="font-sans antialiased bg-slate-50 text-slate-900">
         <Header />
         <main className="min-h-screen">

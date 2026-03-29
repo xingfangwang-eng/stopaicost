@@ -17,6 +17,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const solutionPages = keywordsData.map((item: Keyword) => ({
+    url: `${baseUrl}/solutions/${item.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
   return [
     {
       url: baseUrl,
@@ -30,6 +37,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/solutions`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
     ...toolPages,
+    ...solutionPages,
   ];
 }
