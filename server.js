@@ -115,6 +115,10 @@ app.use(express.static(__dirname, {
   maxAge: '1d'
 }));
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 function sanitizeInput(input) {
   if (typeof input !== 'string') {
     return input;
