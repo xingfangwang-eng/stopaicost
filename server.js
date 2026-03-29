@@ -409,8 +409,11 @@ app.use('*', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`
+export default app;
+
+if (process.env.VERCEL !== '1') {
+  app.listen(PORT, () => {
+    console.log(`
 ╔═══════════════════════════════════════════════════════════╗
 ║                                                             ║
 ║   StopAICost Server Started                                 ║
@@ -427,18 +430,19 @@ app.listen(PORT, () => {
 ║                                                             ║
 ╚═══════════════════════════════════════════════════════════╝
   `);
-  
-  if (DEMO_MODE) {
-    console.log('💡 Demo mode: Set GROQ_API_KEY in .env to use real AI');
-  }
-});
+    
+    if (DEMO_MODE) {
+      console.log('💡 Demo mode: Set GROQ_API_KEY in .env to use real AI');
+    }
+  });
 
-process.on('uncaughtException', (err) => {
-  console.error('[UNCAUGHT EXCEPTION]', err);
-  process.exit(1);
-});
+  process.on('uncaughtException', (err) => {
+    console.error('[UNCAUGHT EXCEPTION]', err);
+    process.exit(1);
+  });
 
-process.on('unhandledRejection', (reason, promise) => {
-  console.error('[UNHANDLED REJECTION]', reason);
-  process.exit(1);
-});
+  process.on('unhandledRejection', (reason, promise) => {
+    console.error('[UNHANDLED REJECTION]', reason);
+    process.exit(1);
+  });
+}
