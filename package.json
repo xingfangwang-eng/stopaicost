@@ -2,24 +2,38 @@
   "name": "stop-aicost",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "node server.js",
-    "build": "echo 'No build required'",
-    "start": "node server.js",
-    "test-links": "node test-links.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "dev:express": "node server.js"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
     "cors": "^2.8.5",
-    "express": "^4.19.2",
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "express-rate-limit": "^7.2.0",
     "helmet": "^7.1.0",
-    "xss": "^1.0.15",
+    "lucide-react": "^1.7.0",
     "morgan": "^1.10.0",
-    "node-fetch": "^3.3.2"
+    "next": "^16.2.1",
+    "node-fetch": "^3.3.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "xss": "^1.0.15"
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2"
   }
 }

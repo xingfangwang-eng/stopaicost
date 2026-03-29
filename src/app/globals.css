@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f9fafb;
+  --foreground: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+pre {
+  font-family: 'Fira Code', monospace;
+}
+
+.code-block {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.code-block .keyword {
+  color: #f472b6;
+}
+
+.code-block .string {
+  color: #a5f3fc;
+}
+
+.code-block .function {
+  color: #fbbf24;
+}
+
+.code-block .comment {
+  color: #64748b;
+}
+
+.code-block .number {
+  color: #c084fc;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.sticky-sidebar {
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  .sticky-sidebar {
+    position: relative;
+    top: 0;
+    max-height: none;
+  }
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th {
+  background: #f1f5f9;
+  font-weight: 700;
+  text-align: left;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.comparison-table td {
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.comparison-table tr:nth-child(even) td {
+  background: #f9fafb;
+}
+
+.comparison-table tr:hover td {
+  background: #f1f5f9;
+}
