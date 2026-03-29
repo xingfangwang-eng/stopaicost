@@ -88,7 +88,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-50">
       <section className="bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black tracking-tighter text-slate-900 mb-6">
               Stop Paying for{' '}
@@ -101,7 +101,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#generator"
-                className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white font-bold text-lg hover:bg-red-700 active:scale-95 transition-all"
+                className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-bold text-lg hover:bg-blue-700 active:scale-95 transition-all"
               >
                 <Zap className="w-5 h-5 mr-2" />
                 Generate Script Now
@@ -112,16 +112,22 @@ export default function HomePage() {
               >
                 Browse Tools
               </Link>
+              <Link
+                href="/solutions"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-slate-200 text-slate-900 font-bold text-lg hover:border-slate-300 transition-all"
+              >
+                Browse All Alternatives
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-12 lg:py-16">
+      <section className="py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-white border border-slate-200 p-8">
+              <div key={index} className="bg-white border border-slate-200 p-10">
                 <div className="w-12 h-12 bg-blue-50 flex items-center justify-center mb-4">
                   <feature.icon className="w-6 h-6 text-blue-500" />
                 </div>
@@ -137,7 +143,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="generator" className="py-12 lg:py-16 bg-white border-y border-slate-200">
+      <section id="generator" className="py-20 lg:py-28 bg-white border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-8">
             <div className="space-y-8">
@@ -227,8 +233,8 @@ export default function HomePage() {
                       </pre>
                     </div>
 
-                    <div className="bg-slate-50 border border-slate-200 p-6">
-                      <p className="text-sm font-bold text-slate-900 mb-2">
+                    <div className="bg-slate-50 border border-slate-200 p-8">
+                      <p className="text-sm font-bold text-slate-900 mb-3">
                         Why This Saves Money
                       </p>
                       <p className="text-slate-600 text-sm leading-relaxed">
@@ -240,10 +246,10 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="lg:sticky-sidebar">
-              <div className="bg-slate-50 border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-900 mb-4">Popular Tools</h3>
-                <div className="space-y-3">
+            <div className="lg:sticky-sidebar space-y-8">
+              <div className="bg-slate-50 border border-slate-200 p-8">
+                <h3 className="font-bold text-slate-900 mb-6">Popular Tools</h3>
+                <div className="space-y-4">
                   {popularTools.map((tool) => (
                     <Link
                       key={tool.slug}
@@ -257,12 +263,12 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="mt-6 bg-red-50 border border-red-200 p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <TrendingDown className="w-5 h-5 text-red-600" />
+              <div className="bg-red-50 border border-red-200 p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <TrendingDown className="w-6 h-6 text-red-600" />
                   <span className="font-bold text-red-900">Average Savings</span>
                 </div>
-                <p className="text-4xl font-black text-red-600 mb-2">97%</p>
+                <p className="text-4xl font-black text-red-600 mb-3">97%</p>
                 <p className="text-sm text-red-700">
                   Users save an average of $228/year by switching from SaaS subscriptions to API scripts.
                 </p>
@@ -272,9 +278,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-12 lg:py-16">
+      <section className="py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-black tracking-tighter text-slate-900 mb-4">
               Why StopAICost?
             </h2>
@@ -284,7 +290,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white border border-slate-200 p-8">
+            <div className="bg-white border border-slate-200 p-10">
               <div className="text-4xl font-black text-red-600 mb-4">$240</div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">
                 Average Annual SaaS Spend
@@ -294,7 +300,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white border border-slate-200 p-8">
+            <div className="bg-white border border-slate-200 p-10">
               <div className="text-4xl font-black text-green-600 mb-4">$6</div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">
                 Actual API Cost
@@ -304,7 +310,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white border border-slate-200 p-8">
+            <div className="bg-white border border-slate-200 p-10">
               <div className="text-4xl font-black text-slate-900 mb-4">97%</div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">
                 Your Savings
@@ -313,6 +319,62 @@ export default function HomePage() {
                 Stop paying for convenience markup. Get the same AI power at raw API prices with StopAICost.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Access Section */}
+      <section className="py-16 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="text-xl font-bold text-slate-900 mb-8 text-center">
+            Quick Access
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <Link href="/solutions/cursor-ai-expensive-hobbyist-fix" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Cursor AI Alternative
+            </Link>
+            <Link href="/solutions/zapier-overkill-for-tiny-tasks" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Zapier Alternative
+            </Link>
+            <Link href="/solutions/gpt-4o-no-subscription-trick" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              GPT-4o Without Subscription
+            </Link>
+            <Link href="/solutions/csv-to-json-ai-no-pro" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              CSV to JSON Conversion
+            </Link>
+            <Link href="/solutions/transcribe-audio-cheap-ai-trick" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Audio Transcription
+            </Link>
+            <Link href="/solutions/extract-invoice-data-ai-cheap" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Invoice Data Extraction
+            </Link>
+            <Link href="/solutions/optimize-code-performance-ai-cheap" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Code Performance Optimization
+            </Link>
+            <Link href="/solutions/automate-email-reports-cheap" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Email Report Automation
+            </Link>
+            <Link href="/solutions/summarize-long-pdf-no-pro" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              PDF Summarization
+            </Link>
+            <Link href="/solutions/convert-handwriting-text-ai-cheap" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Handwriting to Text
+            </Link>
+            <Link href="/solutions/ai-regex-generator-no-fee" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Regex Generator
+            </Link>
+            <Link href="/solutions/generate-unit-tests-ai-cheap" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Unit Test Generation
+            </Link>
+            <Link href="/solutions/stop-triple-ai-subscriptions" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Reduce AI Subscriptions
+            </Link>
+            <Link href="/solutions/analyze-survey-results-ai-cheap" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Survey Analysis
+            </Link>
+            <Link href="/solutions/build-custom-ai-bot-free" className="text-sm text-slate-600 hover:text-blue-600 transition-colors">
+              Custom AI Bot
+            </Link>
           </div>
         </div>
       </section>

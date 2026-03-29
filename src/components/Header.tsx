@@ -12,7 +12,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-red-600 flex items-center justify-center">
+            <div className="w-8 h-8 bg-blue-600 flex items-center justify-center">
               <Zap className="w-5 h-5 text-white" />
             </div>
             <span className="text-xl font-black tracking-tighter text-slate-900">
@@ -33,18 +33,6 @@ export function Header() {
             >
               Tools
             </Link>
-            <Link 
-              href="/pricing" 
-              className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
-            >
-              Pricing
-            </Link>
-            <a
-              href="#generator"
-              className="inline-flex items-center justify-center px-4 py-2 bg-red-600 text-white text-sm font-bold hover:bg-red-700 active:scale-95 transition-all"
-            >
-              Try Now
-            </a>
           </nav>
 
           <button 
@@ -74,18 +62,6 @@ export function Header() {
               >
                 Tools
               </Link>
-              <Link 
-                href="/pricing" 
-                className="text-sm font-medium text-slate-600 hover:text-slate-900"
-              >
-                Pricing
-              </Link>
-              <a
-                href="#generator"
-                className="inline-flex items-center justify-center px-4 py-2 bg-red-600 text-white text-sm font-bold"
-              >
-                Try Now
-              </a>
             </nav>
           </div>
         )}

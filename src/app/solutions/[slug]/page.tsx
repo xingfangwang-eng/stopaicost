@@ -52,7 +52,7 @@ export async function generateMetadata({
       title: keyword.title,
       description: description,
       type: 'article',
-      url: `https://stopaiicost.com/tools/${keyword.slug}`,
+      url: `https://stopaiicost.com/solutions/${keyword.slug}`,
       siteName: 'StopAICost',
       locale: 'en_US',
     },
@@ -63,7 +63,7 @@ export async function generateMetadata({
       site: '@StopAICost',
     },
     alternates: {
-      canonical: `https://stopaiicost.com/tools/${keyword.slug}`,
+      canonical: `https://stopaiicost.com/solutions/${keyword.slug}`,
     },
     robots: {
       index: true,
@@ -86,7 +86,7 @@ export function generateViewport() {
   };
 }
 
-export default async function ToolPage({ 
+export default async function SolutionPage({ 
   params 
 }: { 
   params: Promise<{ slug: string }> 
@@ -108,7 +108,7 @@ export default async function ToolPage({
             '@type': 'Article',
             'headline': keyword.title,
             'description': keyword.how_to_solve,
-            'url': `https://stopaiicost.com/tools/${keyword.slug}`,
+            'url': `https://stopaiicost.com/solutions/${keyword.slug}`,
             'author': {
               '@type': 'Organization',
               'name': 'StopAICost'
@@ -123,7 +123,7 @@ export default async function ToolPage({
             },
             'datePublished': new Date().toISOString(),
             'dateModified': new Date().toISOString(),
-            'articleSection': 'AI Tools',
+            'articleSection': 'AI Solutions',
             'keywords': keyword.keyword
           })
         }}

@@ -10,7 +10,6 @@
     "dev:express": "node server.js"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.2.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
@@ -33,7 +32,7 @@
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.27",
     "postcss": "^8.5.8",
-    "tailwindcss": "^4.2.2",
+    "tailwindcss": "^3.4.19",
     "typescript": "^6.0.2"
   }
 }

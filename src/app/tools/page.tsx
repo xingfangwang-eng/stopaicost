@@ -22,7 +22,7 @@ export default function ToolsPage() {
   return (
     <div className="min-h-screen bg-slate-50">
       <section className="bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-black tracking-tighter text-slate-900 mb-6">
               AI Automation Tools
@@ -35,14 +35,14 @@ export default function ToolsPage() {
         </div>
       </section>
 
-      <section className="py-12 lg:py-16">
+      <section className="py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {keywords.map((tool) => (
               <Link
                 key={tool.slug}
                 href={`/tools/${tool.slug}`}
-                className="group bg-white border border-slate-200 p-6 hover:border-red-600 transition-colors"
+                className="group bg-white border border-slate-200 p-8 hover:border-blue-500 transition-colors"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-10 h-10 bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-colors">

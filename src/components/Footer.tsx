@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-red-600 flex items-center justify-center">
+              <div className="w-8 h-8 bg-blue-600 flex items-center justify-center">
                 <Zap className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-black tracking-tighter text-slate-900">
@@ -29,24 +29,17 @@ export function Footer() {
               <Link href="/tools" className="text-sm text-slate-600 hover:text-slate-900">
                 Tools
               </Link>
-              <Link href="/pricing" className="text-sm text-slate-600 hover:text-slate-900">
-                Pricing
-              </Link>
             </nav>
           </div>
 
           <div>
-            <h3 className="font-bold text-slate-900 mb-4">Connect</h3>
-            <nav className="flex flex-col gap-2">
-              <a href="mailto:457239850@qq.com" className="text-sm text-slate-600 hover:text-slate-900 flex items-center gap-2">
-                <Mail className="w-4 h-4" />
-                Support
-              </a>
-              <a href="https://github.com/xingfangwang-eng/stopaicost" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 hover:text-slate-900 flex items-center gap-2">
-                <ExternalLink className="w-4 h-4" />
-                GitHub
-              </a>
-            </nav>
+            <h3 className="font-bold text-slate-900 mb-4">Contact Support</h3>
+            <p className="text-sm text-slate-600 mb-4">
+              If you have any questions or need assistance, please contact our support team:
+            </p>
+            <a href="mailto:457239850@qq.com" className="text-sm text-blue-600 font-bold hover:text-blue-700">
+              Support: 457239850@qq.com
+            </a>
           </div>
         </div>
 
