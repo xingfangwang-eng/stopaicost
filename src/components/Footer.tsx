@@ -26,9 +26,6 @@ export function Footer() {
               <Link href="/" className="text-sm text-slate-600 hover:text-slate-900">
                 Home
               </Link>
-              <Link href="/tools" className="text-sm text-slate-600 hover:text-slate-900">
-                Tools
-              </Link>
             </nav>
           </div>
 

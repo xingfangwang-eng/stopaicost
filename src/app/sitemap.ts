@@ -8,7 +8,7 @@ interface Keyword {
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://stopaiicost.com';
+  const baseUrl = 'https://stopaicost.wangdadi.xyz';
   
   const solutionPages = keywordsData.map((item: Keyword) => ({
     url: `${baseUrl}/solutions/${item.slug}`,
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: baseUrl,
+      url: `${baseUrl}/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,

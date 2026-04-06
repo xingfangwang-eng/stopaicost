@@ -27,12 +27,6 @@ export function Header() {
             >
               Home
             </Link>
-            <Link 
-              href="/tools" 
-              className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
-            >
-              Tools
-            </Link>
           </nav>
 
           <button 
@@ -55,12 +49,6 @@ export function Header() {
                 className="text-sm font-medium text-slate-600 hover:text-slate-900"
               >
                 Home
-              </Link>
-              <Link 
-                href="/tools" 
-                className="text-sm font-medium text-slate-600 hover:text-slate-900"
-              >
-                Tools
               </Link>
             </nav>
           </div>

@@ -568,23 +568,7 @@ optimizedAI();`
               </div>
             </div>
 
-            <div className="bg-white border border-slate-200 p-8">
-              <h4 className="font-bold text-slate-900 mb-6">Related Tools</h4>
-              <div className="space-y-4">
-                <a href="/tools/api-pricing-vs-subscription-comparison" className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600 transition-colors">
-                  <ArrowRight className="w-4 h-4 text-blue-400" />
-                  API vs Subscription Calculator
-                </a>
-                <a href="/tools/chatgpt-plus-vs-api-cost-calculator" className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600 transition-colors">
-                  <ArrowRight className="w-4 h-4 text-blue-400" />
-                  ChatGPT Plus vs API Cost
-                </a>
-                <a href="/tools/save-money-cursor-ai" className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600 transition-colors">
-                  <ArrowRight className="w-4 h-4 text-blue-400" />
-                  Save Money on Cursor AI
-                </a>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
